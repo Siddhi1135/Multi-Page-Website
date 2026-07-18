@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Explore Destinations | Wanderly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo"><i class="fa-solid fa-paper-plane icon"></i> Wanderly</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="explore.html" class="active">Explore</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-primary">Login</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="page-title">
+      <h1>Explore Destinations</h1>
+      <i class="fa-solid fa-paper-plane icon"></i>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px;">
+  <div class="container">
+    <div class="filter-row" id="filterRow">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="beach">Beach</button>
+      <button class="filter-chip" data-filter="mountains">Mountains</button>
+      <button class="filter-chip" data-filter="city">City</button>
+      <button class="filter-chip" data-filter="adventure">Adventure</button>
+    </div>
+
+    <div class="destination-grid" id="destinationGrid">
+      <article class="destination-card" data-category="mountains">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=500&q=80" alt="Bali, Indonesia"></div>
+        <div class="info"><h3>Bali, Indonesia</h3><p class="price">From <strong>$499</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="city">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=500&q=80" alt="Santorini, Greece"></div>
+        <div class="info"><h3>Santorini, Greece</h3><p class="price">From <strong>$689</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="mountains">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=500&q=80" alt="Switzerland"></div>
+        <div class="info"><h3>Switzerland</h3><p class="price">From <strong>$689</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="city">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=500&q=80" alt="Tokyo, Japan"></div>
+        <div class="info"><h3>Tokyo, Japan</h3><p class="price">From <strong>$799</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="beach">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=500&q=80" alt="Maldives"></div>
+        <div class="info"><h3>Maldives</h3><p class="price">From <strong>$899</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="city">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Paris, France"></div>
+        <div class="info"><h3>Paris, France</h3><p class="price">From <strong>$689</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="city">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1543716091-a840c05249ec?auto=format&fit=crop&w=500&q=80" alt="New York, USA"></div>
+        <div class="info"><h3>New York, USA</h3><p class="price">From <strong>$999</strong></p></div>
+      </article>
+
+      <article class="destination-card" data-category="adventure">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80" alt="Dubai, UAE"></div>
+        <div class="info"><h3>Dubai, UAE</h3><p class="price">From <strong>$899</strong></p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><i class="fa-solid fa-paper-plane icon"></i> Wanderly</div>
+      <p>Let's make your next journey your best adventure yet.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Top Destinations</h4>
+      <ul>
+        <li><a href="explore.html">Bali</a></li>
+        <li><a href="explore.html">Greece</a></li>
+        <li><a href="explore.html">Switzerland</a></li>
+        <li><a href="explore.html">Japan</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p style="font-size:0.85rem;">Subscribe to get the latest travel updates and offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2024 Wanderly. All Rights Reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

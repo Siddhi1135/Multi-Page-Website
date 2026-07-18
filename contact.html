@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us | Wanderly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo"><i class="fa-solid fa-paper-plane icon"></i> Wanderly</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="explore.html">Explore</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-primary">Login</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="contact-section">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h1>Get In Touch</h1>
+      <div class="eyebrow-line"><span class="bar"></span><i class="fa-solid fa-paper-plane icon"></i></div>
+      <p>Have questions or need assistance? We're here to help!</p>
+
+      <div class="contact-item">
+        <div class="icon-badge"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h4>Email</h4>
+          <p>info@wanderly.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <h4>Phone</h4>
+          <p>+1 234 567 890</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <h4>Address</h4>
+          <p>123 Travel Street, Adventure City, World 12345</p>
+        </div>
+      </div>
+
+      <h4 style="margin-bottom:12px;">Follow Us</h4>
+      <div class="social-row">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-form-card">
+      <form>
+        <div class="form-grid-2">
+          <div class="field-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="field-group">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter subject" required>
+        </div>
+
+        <div class="field-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><i class="fa-solid fa-paper-plane icon"></i> Wanderly</div>
+      <p>Let's make your next journey your best adventure yet.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Top Destinations</h4>
+      <ul>
+        <li><a href="explore.html">Bali</a></li>
+        <li><a href="explore.html">Greece</a></li>
+        <li><a href="explore.html">Switzerland</a></li>
+        <li><a href="explore.html">Japan</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p style="font-size:0.85rem;">Subscribe to get the latest travel updates and offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2024 Wanderly. All Rights Reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
