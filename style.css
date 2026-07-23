@@ -45,7 +45,7 @@ ul {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
   display: block;
 }
 
@@ -577,6 +577,33 @@ button, input, textarea {
 .field-group textarea {
   resize: vertical;
   min-height: 120px;
+}
+
+.field-group input.is-invalid,
+.field-group textarea.is-invalid {
+  border-color: #dc2626;
+}
+
+.field-group input.is-invalid:focus,
+.field-group textarea.is-invalid:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+.field-group input.is-valid,
+.field-group textarea.is-valid {
+  border-color: #16a34a;
+}
+
+.field-error {
+  display: none;
+  color: #dc2626;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.field-error.show {
+  display: block;
 }
 
 .form-row-between {

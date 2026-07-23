@@ -68,26 +68,26 @@
     </div>
 
     <div class="contact-form-card">
-      <form>
+      <form id="contactForm" novalidate>
         <div class="form-grid-2">
           <div class="field-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="text" id="name" placeholder="Enter your name" data-rules="required,min:2">
           </div>
           <div class="field-group">
             <label for="cemail">Email Address</label>
-            <input type="email" id="cemail" placeholder="Enter your email" required>
+            <input type="email" id="cemail" placeholder="Enter your email" data-rules="required,email">
           </div>
         </div>
 
         <div class="field-group">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Enter subject" required>
+          <input type="text" id="subject" placeholder="Enter subject" data-rules="required,min:3">
         </div>
 
         <div class="field-group">
           <label for="message">Message</label>
-          <textarea id="message" placeholder="Write your message..." required></textarea>
+          <textarea id="message" placeholder="Write your message..." data-rules="required,min:10"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary btn-block">Send Message</button>
