@@ -329,6 +329,39 @@ button, input, textarea {
 .destination-card .thumb {
   height: 160px;
   overflow: hidden;
+  position: relative;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.fav-btn:hover {
+  transform: scale(1.1);
+}
+
+.fav-btn.active {
+  color: #dc2626;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--text-gray);
+  padding: 40px 0;
+  grid-column: 1 / -1;
 }
 
 .destination-card .thumb img {
