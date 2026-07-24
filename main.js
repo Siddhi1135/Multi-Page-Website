@@ -113,6 +113,52 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // =======================================================
+  // Countdown Timer (Timers & Intervals + Session Storage)
+  // Deadline resets each new browser session (sessionStorage),
+  // unlike favorites which persist forever (localStorage).
+  // =======================================================
+  const cdHours = document.getElementById("cdHours");
+  const cdMinutes = document.getElementById("cdMinutes");
+  const cdSeconds = document.getElementById("cdSeconds");
+
+  if (cdHours && cdMinutes && cdSeconds) {
+    const DURATION_MS = 24 * 60 * 60 * 1000; // 24 hours
+
+    let deadline = sessionStorage.getItem("wanderly_deal_deadline");
+
+    if (!deadline) {
+      deadline = Date.now() + DURATION_MS;
+      sessionStorage.setItem("wanderly_deal_deadline", deadline);
+    } else {
+      deadline = Number(deadline);
+    }
+
+    const timerInterval = setInterval(updateCountdown, 1000);
+
+    function updateCountdown() {
+      const remaining = deadline - Date.now();
+
+      if (remaining <= 0) {
+        cdHours.textContent = "00";
+        cdMinutes.textContent = "00";
+        cdSeconds.textContent = "00";
+        clearInterval(timerInterval);
+        return;
+      }
+
+      const hours = Math.floor(remaining / (1000 * 60 * 60));
+      const minutes = Math.floor((remaining / (1000 * 60)) % 60);
+      const seconds = Math.floor((remaining / 1000) % 60);
+
+      cdHours.textContent = String(hours).padStart(2, "0");
+      cdMinutes.textContent = String(minutes).padStart(2, "0");
+      cdSeconds.textContent = String(seconds).padStart(2, "0");
+    }
+
+    updateCountdown();
+  }
+
+  // =======================================================
   // Form validation engine
   // Fields opt in via data-rules="required,email,min:6"
   // Error <small> elements are created dynamically (DOM manipulation)

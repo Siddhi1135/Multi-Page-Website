@@ -259,6 +259,56 @@ button, input, textarea {
   color: var(--text-gray);
 }
 
+/* ---------- Countdown banner ---------- */
+.countdown-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: linear-gradient(120deg, var(--primary), var(--primary-dark));
+  border-radius: var(--radius-md);
+  padding: 26px 32px;
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.countdown-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.countdown-text p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 14px;
+}
+
+.countdown-unit {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  min-width: 64px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.countdown-unit span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.countdown-unit small {
+  font-size: 0.7rem;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .search-bar .btn {
   height: 46px;
   white-space: nowrap;
@@ -905,6 +955,7 @@ button, input, textarea {
     transform: translateY(-140%);
     opacity: 0;
     pointer-events: none;
+  
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
 
