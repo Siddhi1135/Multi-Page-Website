@@ -4,7 +4,8 @@ A responsive multi-page travel booking website (HTML, CSS, JavaScript) with an A
 
 **Live demo:** https://wanderly-travel-pi.vercel.app
 
-![Wanderly AI assistant](screenshots/chatbot.png)
+![Wanderly AI assistant]<img width="1535" height="778" alt="Wanderly Ai Assistant " src="https://github.com/user-attachments/assets/3afff6a3-d86a-4c79-815f-42eecd87c56b" />
+
 
 ## Features
 
